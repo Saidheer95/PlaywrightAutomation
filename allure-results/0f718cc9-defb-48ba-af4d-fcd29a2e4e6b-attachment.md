@@ -1,0 +1,397 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e8]:
+    - navigation [ref=e9]:
+      - list [ref=e10]:
+        - listitem [ref=e11]:
+          - button " Dashboard" [ref=e12] [cursor=pointer]:
+            - generic [ref=e15]: 
+            - link "Dashboard" [ref=e17]:
+              - /url: /dashboard
+    - navigation [ref=e18]:
+      - list [ref=e19]:
+        - listitem [ref=e20]:
+          - button " Vendors" [ref=e21] [cursor=pointer]:
+            - generic [ref=e24]: 
+            - link "Vendors" [ref=e26]:
+              - /url: /supplier
+    - navigation [ref=e27]:
+      - list [ref=e28]:
+        - listitem [ref=e29]:
+          - button " Catalogue" [ref=e30] [cursor=pointer]:
+            - generic [ref=e33]: 
+            - generic [ref=e34]: Catalogue
+    - navigation [ref=e37]:
+      - list [ref=e38]:
+        - listitem [ref=e39]:
+          - button " Requisitions" [ref=e40] [cursor=pointer]:
+            - generic [ref=e43]: 
+            - link "Requisitions" [active] [ref=e45]:
+              - /url: /sourcing
+    - navigation [ref=e46]:
+      - list [ref=e47]:
+        - listitem [ref=e48]:
+          - button " Items" [ref=e49] [cursor=pointer]:
+            - generic [ref=e52]: 
+            - link "Items" [ref=e54]:
+              - /url: /manage-items
+    - navigation [ref=e55]:
+      - list [ref=e56]:
+        - listitem [ref=e57]:
+          - button " Bids" [ref=e58] [cursor=pointer]:
+            - generic [ref=e61]: 
+            - link "Bids" [ref=e63]:
+              - /url: /bids
+    - navigation [ref=e64]:
+      - list [ref=e65]:
+        - listitem [ref=e66]:
+          - button " Purchase Orders" [ref=e67] [cursor=pointer]:
+            - generic [ref=e70]: 
+            - link "Purchase Orders" [ref=e72]:
+              - /url: /po-landing
+    - navigation [ref=e73]:
+      - list [ref=e74]:
+        - listitem [ref=e75]:
+          - button " Purchase Agreement" [ref=e76] [cursor=pointer]:
+            - generic [ref=e79]: 
+            - generic [ref=e80]: Purchase Agreement
+    - navigation [ref=e83]:
+      - list [ref=e84]:
+        - listitem [ref=e85]:
+          - button " Reports" [ref=e86] [cursor=pointer]:
+            - generic [ref=e89]: 
+            - link "Reports" [ref=e91]:
+              - /url: /myreports
+  - generic [ref=e94]:
+    - heading "test" [level=3] [ref=e95]:
+      - text: 
+      - img "test" [ref=e97]
+    - generic [ref=e99]:
+      - generic [ref=e100]: Welcome, Sai dheer -Prokraya
+      - generic "Emails" [ref=e102] [cursor=pointer]:
+        - generic [ref=e103]: 
+      - generic "Notifications" [ref=e106] [cursor=pointer]:
+        - generic [ref=e107]: 
+  - generic [ref=e112]:
+    - generic [ref=e113]:
+      - heading "Purchase Requests" [level=2] [ref=e114]
+      - paragraph [ref=e115]: Manage all Purchase Requisitions from here.
+      - generic [ref=e119]: Toggle Dropdown
+      - generic [ref=e121]:
+        - table [ref=e126]:
+          - rowgroup [ref=e127]:
+            - row "Ext.PR No. Status Bid# PA# Requestor Department PR Amount Requested Date Accounting Date" [ref=e128]:
+              - columnheader "Ext.PR No." [ref=e129]:
+                - button "Ext.PR No." [ref=e130] [cursor=pointer]:
+                  - text: Ext.PR No.
+                  - generic [ref=e131]: arrow_downward
+              - columnheader "Status" [ref=e132]:
+                - button "Status" [ref=e133] [cursor=pointer]:
+                  - text: Status
+                  - generic [ref=e134]: arrow_downward
+              - columnheader "Bid#" [ref=e135]:
+                - button "Bid#" [ref=e136] [cursor=pointer]:
+                  - text: Bid#
+                  - generic [ref=e137]: arrow_downward
+              - columnheader "PA#" [ref=e138]:
+                - button "PA#" [ref=e139] [cursor=pointer]:
+                  - text: PA#
+                  - generic [ref=e140]: arrow_downward
+              - columnheader "Requestor" [ref=e141]:
+                - button "Requestor" [ref=e142] [cursor=pointer]:
+                  - text: Requestor
+                  - generic [ref=e143]: arrow_downward
+              - columnheader "Department" [ref=e144]:
+                - button "Department" [ref=e145] [cursor=pointer]:
+                  - text: Department
+                  - generic [ref=e146]: arrow_downward
+              - columnheader "PR Amount" [ref=e147]:
+                - button "PR Amount" [ref=e148] [cursor=pointer]:
+                  - text: PR Amount
+                  - generic [ref=e149]: arrow_downward
+              - columnheader "Requested Date" [ref=e150]:
+                - button "Requested Date" [ref=e151] [cursor=pointer]:
+                  - text: Requested Date
+                  - generic [ref=e152]: arrow_downward
+              - columnheader "Accounting Date" [ref=e153]:
+                - button "Accounting Date" [ref=e154] [cursor=pointer]:
+                  - text: Accounting Date
+                  - generic [ref=e155]: arrow_downward
+          - rowgroup [ref=e156]:
+            - row "filter data by Ext.PR No. filter data by Status filter data by Bid# filter data by PA# filter data by Requestor filter data by Department filter data by PR Amount filter data by Requested Date filter data by Accounting Date" [ref=e157]:
+              - cell "filter data by Ext.PR No." [ref=e158]:
+                - generic [ref=e160]:
+                  - generic [ref=e162]: filter_list
+                  - searchbox "filter data by Ext.PR No." [ref=e163]
+              - cell "filter data by Status" [ref=e164]:
+                - generic [ref=e166]:
+                  - generic [ref=e168]: filter_list
+                  - searchbox "filter data by Status" [ref=e169]
+              - cell "filter data by Bid#" [ref=e170]:
+                - generic [ref=e172]:
+                  - generic [ref=e174]: filter_list
+                  - searchbox "filter data by Bid#" [ref=e175]
+              - cell "filter data by PA#" [ref=e176]:
+                - generic [ref=e178]:
+                  - generic [ref=e180]: filter_list
+                  - searchbox "filter data by PA#" [ref=e181]
+              - cell "filter data by Requestor" [ref=e182]:
+                - generic [ref=e184]:
+                  - generic [ref=e186]: filter_list
+                  - searchbox "filter data by Requestor" [ref=e187]
+              - cell "filter data by Department" [ref=e188]:
+                - generic [ref=e190]:
+                  - generic [ref=e192]: filter_list
+                  - searchbox "filter data by Department" [ref=e193]
+              - cell "filter data by PR Amount" [ref=e194]:
+                - generic [ref=e196]:
+                  - generic [ref=e198]: filter_list
+                  - searchbox "filter data by PR Amount" [ref=e199]
+              - cell "filter data by Requested Date" [ref=e200]:
+                - generic [ref=e202]:
+                  - generic [ref=e204]: filter_list
+                  - searchbox "filter data by Requested Date" [ref=e205]
+              - cell "filter data by Accounting Date" [ref=e206]:
+                - generic [ref=e208]:
+                  - generic [ref=e210]: filter_list
+                  - searchbox "filter data by Accounting Date" [ref=e211]
+            - row "PR/0021296 In Review NA PA/0003483 Sai dheer -Prokraya Information Technolo ... AED 1,620.00 17-03-2026 17-03-2026" [ref=e212]:
+              - cell "PR/0021296" [ref=e213]:
+                - generic [ref=e214]: PR/0021296
+              - cell "In Review" [ref=e215]:
+                - generic [ref=e217]: In Review
+              - cell "NA" [ref=e218]:
+                - generic [ref=e219]: NA
+              - cell "PA/0003483" [ref=e220]:
+                - generic [ref=e222]: PA/0003483
+              - cell "Sai dheer -Prokraya" [ref=e223]:
+                - generic "Sai dheer -Prokraya" [ref=e224]:
+                  - strong [ref=e225]: Sai dheer -Prokraya
+              - cell "Information Technolo ..." [ref=e226]:
+                - generic "Information Technology Department" [ref=e227]: Information Technolo ...
+              - cell "AED 1,620.00" [ref=e228]:
+                - strong [ref=e230]: AED 1,620.00
+              - cell "17-03-2026" [ref=e231]:
+                - generic [ref=e232]: 17-03-2026
+              - cell "17-03-2026" [ref=e233]:
+                - generic [ref=e234]: 17-03-2026
+            - row "PR/0021279 Closed RFQC/0019891 NA Sai dheer -Prokraya Information Technolo ... AED 675.00 26-02-2026 26-02-2026" [ref=e235]:
+              - cell "PR/0021279" [ref=e236]:
+                - generic [ref=e237]: PR/0021279
+              - cell "Closed" [ref=e238]:
+                - generic [ref=e240]: Closed
+              - cell "RFQC/0019891" [ref=e241]:
+                - link "RFQC/0019891" [ref=e244] [cursor=pointer]:
+                  - /url: /bid-view
+              - cell "NA" [ref=e245]:
+                - generic [ref=e246]: NA
+              - cell "Sai dheer -Prokraya" [ref=e247]:
+                - generic "Sai dheer -Prokraya" [ref=e248]:
+                  - strong [ref=e249]: Sai dheer -Prokraya
+              - cell "Information Technolo ..." [ref=e250]:
+                - generic "Information Technology Department" [ref=e251]: Information Technolo ...
+              - cell "AED 675.00" [ref=e252]:
+                - strong [ref=e254]: AED 675.00
+              - cell "26-02-2026" [ref=e255]:
+                - generic [ref=e256]: 26-02-2026
+              - cell "26-02-2026" [ref=e257]:
+                - generic [ref=e258]: 26-02-2026
+            - row "PR/0021268 In Review RFQC/0019871 NA Sajith Ravindranath Information Technolo ... AED 260,000.00 23-02-2026 23-02-2026" [ref=e259]:
+              - cell "PR/0021268" [ref=e260]:
+                - generic [ref=e261]: PR/0021268
+              - cell "In Review" [ref=e262]:
+                - generic [ref=e264]: In Review
+              - cell "RFQC/0019871" [ref=e265]:
+                - link "RFQC/0019871" [ref=e268] [cursor=pointer]:
+                  - /url: /bid-view
+              - cell "NA" [ref=e269]:
+                - generic [ref=e270]: NA
+              - cell "Sajith Ravindranath" [ref=e271]:
+                - generic "Sajith Ravindranath" [ref=e272]:
+                  - strong [ref=e273]: Sajith Ravindranath
+              - cell "Information Technolo ..." [ref=e274]:
+                - generic "Information Technology Department" [ref=e275]: Information Technolo ...
+              - cell "AED 260,000.00" [ref=e276]:
+                - strong [ref=e278]: AED 260,000.00
+              - cell "23-02-2026" [ref=e279]:
+                - generic [ref=e280]: 23-02-2026
+              - cell "23-02-2026" [ref=e281]:
+                - generic [ref=e282]: 23-02-2026
+            - row "PR/0021266 In Review RFQC/0019872 NA Chanti singamreddy Information Technolo ... AED 1,890.00 23-02-2026 23-02-2026" [ref=e283]:
+              - cell "PR/0021266" [ref=e284]:
+                - generic [ref=e285]: PR/0021266
+              - cell "In Review" [ref=e286]:
+                - generic [ref=e288]: In Review
+              - cell "RFQC/0019872" [ref=e289]:
+                - link "RFQC/0019872" [ref=e292] [cursor=pointer]:
+                  - /url: /bid-view
+              - cell "NA" [ref=e293]:
+                - generic [ref=e294]: NA
+              - cell "Chanti singamreddy" [ref=e295]:
+                - generic "Chanti singamreddy" [ref=e296]:
+                  - strong [ref=e297]: Chanti singamreddy
+              - cell "Information Technolo ..." [ref=e298]:
+                - generic "Information Technology Department" [ref=e299]: Information Technolo ...
+              - cell "AED 1,890.00" [ref=e300]:
+                - strong [ref=e302]: AED 1,890.00
+              - cell "23-02-2026" [ref=e303]:
+                - generic [ref=e304]: 23-02-2026
+              - cell "23-02-2026" [ref=e305]:
+                - generic [ref=e306]: 23-02-2026
+            - row "PR/0021265 Approved RFQC/0019873 NA Chanti singamreddy Information Technolo ... AED 2,860,021.00 23-02-2026 23-02-2026" [ref=e307]:
+              - cell "PR/0021265" [ref=e308]:
+                - generic [ref=e309]: PR/0021265
+              - cell "Approved" [ref=e310]:
+                - generic [ref=e312]: Approved
+              - cell "RFQC/0019873" [ref=e313]:
+                - link "RFQC/0019873" [ref=e316] [cursor=pointer]:
+                  - /url: /bid-view
+              - cell "NA" [ref=e317]:
+                - generic [ref=e318]: NA
+              - cell "Chanti singamreddy" [ref=e319]:
+                - generic "Chanti singamreddy" [ref=e320]:
+                  - strong [ref=e321]: Chanti singamreddy
+              - cell "Information Technolo ..." [ref=e322]:
+                - generic "Information Technology Department" [ref=e323]: Information Technolo ...
+              - cell "AED 2,860,021.00" [ref=e324]:
+                - strong [ref=e326]: AED 2,860,021.00
+              - cell "23-02-2026" [ref=e327]:
+                - generic [ref=e328]: 23-02-2026
+              - cell "23-02-2026" [ref=e329]:
+                - generic [ref=e330]: 23-02-2026
+            - row "PR/0021251 In Review Create RFQ NA Chanti singamreddy Information Technolo ... AED 260,000.00 17-02-2026 17-02-2026" [ref=e331]:
+              - cell "PR/0021251" [ref=e332]:
+                - generic [ref=e333]: PR/0021251
+              - cell "In Review" [ref=e334]:
+                - generic [ref=e336]: In Review
+              - cell "Create RFQ" [ref=e337]:
+                - button "Create RFQ" [ref=e339] [cursor=pointer]
+              - cell "NA" [ref=e340]:
+                - generic [ref=e341]: NA
+              - cell "Chanti singamreddy" [ref=e342]:
+                - generic "Chanti singamreddy" [ref=e343]:
+                  - strong [ref=e344]: Chanti singamreddy
+              - cell "Information Technolo ..." [ref=e345]:
+                - generic "Information Technology Department" [ref=e346]: Information Technolo ...
+              - cell "AED 260,000.00" [ref=e347]:
+                - strong [ref=e349]: AED 260,000.00
+              - cell "17-02-2026" [ref=e350]:
+                - generic [ref=e351]: 17-02-2026
+              - cell "17-02-2026" [ref=e352]:
+                - generic [ref=e353]: 17-02-2026
+            - row "PR/0021244 In Review RFQC/0019845 NA Chanti singamreddy Information Technolo ... AED 260,000.00 17-02-2026 17-02-2026" [ref=e354]:
+              - cell "PR/0021244" [ref=e355]:
+                - generic [ref=e356]: PR/0021244
+              - cell "In Review" [ref=e357]:
+                - generic [ref=e359]: In Review
+              - cell "RFQC/0019845" [ref=e360]:
+                - link "RFQC/0019845" [ref=e363] [cursor=pointer]:
+                  - /url: /bid-view
+              - cell "NA" [ref=e364]:
+                - generic [ref=e365]: NA
+              - cell "Chanti singamreddy" [ref=e366]:
+                - generic "Chanti singamreddy" [ref=e367]:
+                  - strong [ref=e368]: Chanti singamreddy
+              - cell "Information Technolo ..." [ref=e369]:
+                - generic "Information Technology Department" [ref=e370]: Information Technolo ...
+              - cell "AED 260,000.00" [ref=e371]:
+                - strong [ref=e373]: AED 260,000.00
+              - cell "17-02-2026" [ref=e374]:
+                - generic [ref=e375]: 17-02-2026
+              - cell "17-02-2026" [ref=e376]:
+                - generic [ref=e377]: 17-02-2026
+            - row "PR/0021243 In Review RFQC/0019844 NA Chanti singamreddy Information Technolo ... AED 260,000.00 17-02-2026 17-02-2026" [ref=e378]:
+              - cell "PR/0021243" [ref=e379]:
+                - generic [ref=e380]: PR/0021243
+              - cell "In Review" [ref=e381]:
+                - generic [ref=e383]: In Review
+              - cell "RFQC/0019844" [ref=e384]:
+                - link "RFQC/0019844" [ref=e387] [cursor=pointer]:
+                  - /url: /bid-create
+              - cell "NA" [ref=e388]:
+                - generic [ref=e389]: NA
+              - cell "Chanti singamreddy" [ref=e390]:
+                - generic "Chanti singamreddy" [ref=e391]:
+                  - strong [ref=e392]: Chanti singamreddy
+              - cell "Information Technolo ..." [ref=e393]:
+                - generic "Information Technology Department" [ref=e394]: Information Technolo ...
+              - cell "AED 260,000.00" [ref=e395]:
+                - strong [ref=e397]: AED 260,000.00
+              - cell "17-02-2026" [ref=e398]:
+                - generic [ref=e399]: 17-02-2026
+              - cell "17-02-2026" [ref=e400]:
+                - generic [ref=e401]: 17-02-2026
+            - row "PR/0021235 In Review RFQC/0019839 NA Sajith Ravindranath Information Technolo ... AED 250.00 16-02-2026 16-02-2026" [ref=e402]:
+              - cell "PR/0021235" [ref=e403]:
+                - generic [ref=e404]: PR/0021235
+              - cell "In Review" [ref=e405]:
+                - generic [ref=e407]: In Review
+              - cell "RFQC/0019839" [ref=e408]:
+                - link "RFQC/0019839" [ref=e411] [cursor=pointer]:
+                  - /url: /bid-create
+              - cell "NA" [ref=e412]:
+                - generic [ref=e413]: NA
+              - cell "Sajith Ravindranath" [ref=e414]:
+                - generic "Sajith Ravindranath" [ref=e415]:
+                  - strong [ref=e416]: Sajith Ravindranath
+              - cell "Information Technolo ..." [ref=e417]:
+                - generic "Information Technology Department" [ref=e418]: Information Technolo ...
+              - cell "AED 250.00" [ref=e419]:
+                - strong [ref=e421]: AED 250.00
+              - cell "16-02-2026" [ref=e422]:
+                - generic [ref=e423]: 16-02-2026
+              - cell "16-02-2026" [ref=e424]:
+                - generic [ref=e425]: 16-02-2026
+            - row "PR/0021194 Inreview NA NA Christine Acutina Aqaar Community Mana ... AED 0.00 05-02-2026 05-02-2026" [ref=e426]:
+              - cell "PR/0021194" [ref=e427]:
+                - generic [ref=e428]: PR/0021194
+              - cell "Inreview" [ref=e429]:
+                - generic [ref=e431]: Inreview
+              - cell "NA" [ref=e432]:
+                - generic [ref=e433]: NA
+              - cell "NA" [ref=e434]:
+                - generic [ref=e435]: NA
+              - cell "Christine Acutina" [ref=e436]:
+                - generic "Christine Acutina" [ref=e437]:
+                  - strong [ref=e438]: Christine Acutina
+              - cell "Aqaar Community Mana ..." [ref=e439]:
+                - generic "Aqaar Community Management" [ref=e440]: Aqaar Community Mana ...
+              - cell "AED 0.00" [ref=e441]:
+                - strong [ref=e443]: AED 0.00
+              - cell "05-02-2026" [ref=e444]:
+                - generic [ref=e445]: 05-02-2026
+              - cell "05-02-2026" [ref=e446]:
+                - generic [ref=e447]: 05-02-2026
+        - table [ref=e448]:
+          - rowgroup [ref=e449]:
+            - row "10 rows 1-10 of 62" [ref=e450]:
+              - cell "10 rows 1-10 of 62" [ref=e451]:
+                - generic [ref=e452]:
+                  - generic [ref=e453]:
+                    - 'button "Rows per page: 10 rows" [ref=e454] [cursor=pointer]':
+                      - generic [ref=e455]: 10 rows
+                    - textbox: "10"
+                    - img
+                  - generic [ref=e456]:
+                    - generic "First Page" [ref=e457]:
+                      - button [disabled]:
+                        - generic:
+                          - generic: first_page
+                    - generic "Previous Page" [ref=e458]:
+                      - button [disabled]:
+                        - generic:
+                          - generic: chevron_left
+                    - generic [ref=e459]: 1-10 of 62
+                    - generic "Next Page" [ref=e460]:
+                      - button [ref=e461] [cursor=pointer]:
+                        - generic [ref=e463]: chevron_right
+                    - generic "Last Page" [ref=e464]:
+                      - button [ref=e465] [cursor=pointer]:
+                        - generic [ref=e467]: last_page
+    - generic [ref=e468]:
+      - img "logo" [ref=e469]
+      - generic [ref=e470]: Copyright©2026 Prokraya Tech Private Limited, All rights reserved. | Privacy Policy| Terms & Conditions
+      - generic [ref=e471]: "Last Login: 17-03-2026 06:32 PM"
+```

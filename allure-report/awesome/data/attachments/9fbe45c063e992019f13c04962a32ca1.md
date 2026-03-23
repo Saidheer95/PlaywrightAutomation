@@ -1,0 +1,440 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e9]:
+    - navigation [ref=e10]:
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - button " Dashboard" [ref=e13] [cursor=pointer]:
+            - generic [ref=e16]: 
+            - link "Dashboard" [ref=e18]:
+              - /url: /dashboard
+    - navigation [ref=e19]:
+      - list [ref=e20]:
+        - listitem [ref=e21]:
+          - button " Vendors" [ref=e22] [cursor=pointer]:
+            - generic [ref=e25]: 
+            - link "Vendors" [ref=e27]:
+              - /url: /supplier
+    - navigation [ref=e28]:
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - button " Catalogue" [ref=e31] [cursor=pointer]:
+            - generic [ref=e34]: 
+            - generic [ref=e35]: Catalogue
+    - navigation [ref=e38]:
+      - list [ref=e39]:
+        - listitem [ref=e40]:
+          - button " Requisitions" [ref=e41] [cursor=pointer]:
+            - generic [ref=e44]: 
+            - link "Requisitions" [ref=e46]:
+              - /url: /sourcing
+    - navigation [ref=e47]:
+      - list [ref=e48]:
+        - listitem [ref=e49]:
+          - button " Items" [ref=e50] [cursor=pointer]:
+            - generic [ref=e53]: 
+            - link "Items" [ref=e55]:
+              - /url: /manage-items
+    - navigation [ref=e56]:
+      - list [ref=e57]:
+        - listitem [ref=e58]:
+          - button " Bids" [ref=e59] [cursor=pointer]:
+            - generic [ref=e62]: 
+            - link "Bids" [ref=e64]:
+              - /url: /bids
+    - navigation [ref=e65]:
+      - list [ref=e66]:
+        - listitem [ref=e67]:
+          - button " Purchase Orders" [ref=e68] [cursor=pointer]:
+            - generic [ref=e71]: 
+            - link "Purchase Orders" [active] [ref=e73]:
+              - /url: /po-landing
+    - navigation [ref=e74]:
+      - list [ref=e75]:
+        - listitem [ref=e76]:
+          - button " Purchase Agreement" [ref=e77] [cursor=pointer]:
+            - generic [ref=e80]: 
+            - generic [ref=e81]: Purchase Agreement
+    - navigation [ref=e84]:
+      - list [ref=e85]:
+        - listitem [ref=e86]:
+          - button " Reports" [ref=e87] [cursor=pointer]:
+            - generic [ref=e90]: 
+            - link "Reports" [ref=e92]:
+              - /url: /myreports
+  - generic [ref=e95]:
+    - heading "test" [level=3] [ref=e96]:
+      - text: 
+      - img "test" [ref=e98]
+    - generic [ref=e100]:
+      - generic [ref=e101]: Welcome, Sai dheer -Prokraya
+      - generic "Emails" [ref=e103] [cursor=pointer]:
+        - generic [ref=e104]: 
+      - generic "Notifications" [ref=e107] [cursor=pointer]:
+        - generic [ref=e108]: 
+  - generic [ref=e113]:
+    - generic [ref=e114]:
+      - heading "Purchase Orders" [level=2] [ref=e115]
+      - paragraph [ref=e116]: Manage all Purchase Orders from here.
+      - generic [ref=e118]:
+        - button "Create New" [ref=e119] [cursor=pointer]
+        - generic [ref=e121]: Toggle Dropdown
+      - generic [ref=e123]:
+        - table [ref=e128]:
+          - rowgroup [ref=e129]:
+            - row "Ext. PO No. Status Vendor Code Vendor Name Requestor Department Buyer Total Amount Cre. Date Del. Date" [ref=e130]:
+              - columnheader "Ext. PO No." [ref=e131]:
+                - button "Ext. PO No." [ref=e132] [cursor=pointer]:
+                  - text: Ext. PO No.
+                  - generic [ref=e133]: arrow_downward
+              - columnheader "Status" [ref=e134]:
+                - button "Status" [ref=e135] [cursor=pointer]:
+                  - text: Status
+                  - generic [ref=e136]: arrow_downward
+              - columnheader "Vendor Code" [ref=e137]:
+                - button "Vendor Code" [ref=e138] [cursor=pointer]:
+                  - text: Vendor Code
+                  - generic [ref=e139]: arrow_downward
+              - columnheader "Vendor Name" [ref=e140]:
+                - button "Vendor Name" [ref=e141] [cursor=pointer]:
+                  - text: Vendor Name
+                  - generic [ref=e142]: arrow_downward
+              - columnheader "Requestor" [ref=e143]:
+                - button "Requestor" [ref=e144] [cursor=pointer]:
+                  - text: Requestor
+                  - generic [ref=e145]: arrow_downward
+              - columnheader "Department" [ref=e146]:
+                - button "Department" [ref=e147] [cursor=pointer]:
+                  - text: Department
+                  - generic [ref=e148]: arrow_downward
+              - columnheader "Buyer" [ref=e149]:
+                - button "Buyer" [ref=e150] [cursor=pointer]:
+                  - text: Buyer
+                  - generic [ref=e151]: arrow_downward
+              - columnheader "Total Amount" [ref=e152]:
+                - button "Total Amount" [ref=e153] [cursor=pointer]:
+                  - text: Total Amount
+                  - generic [ref=e154]: arrow_downward
+              - columnheader "Cre. Date" [ref=e155]:
+                - button "Cre. Date" [ref=e156] [cursor=pointer]:
+                  - text: Cre. Date
+                  - generic [ref=e157]: arrow_downward
+              - columnheader "Del. Date" [ref=e158]:
+                - button "Del. Date" [ref=e159] [cursor=pointer]:
+                  - text: Del. Date
+                  - generic [ref=e160]: arrow_downward
+          - rowgroup [ref=e161]:
+            - row "filter data by Ext. PO No. filter data by Status filter data by Vendor Code filter data by Vendor Name filter data by Requestor filter data by Department filter data by Buyer filter data by Total Amount filter data by Cre. Date filter data by Del. Date" [ref=e162]:
+              - cell "filter data by Ext. PO No." [ref=e163]:
+                - generic [ref=e165]:
+                  - generic [ref=e167]: filter_list
+                  - searchbox "filter data by Ext. PO No." [ref=e168]
+              - cell "filter data by Status" [ref=e169]:
+                - generic [ref=e171]:
+                  - generic [ref=e173]: filter_list
+                  - searchbox "filter data by Status" [ref=e174]
+              - cell "filter data by Vendor Code" [ref=e175]:
+                - generic [ref=e177]:
+                  - generic [ref=e179]: filter_list
+                  - searchbox "filter data by Vendor Code" [ref=e180]
+              - cell "filter data by Vendor Name" [ref=e181]:
+                - generic [ref=e183]:
+                  - generic [ref=e185]: filter_list
+                  - searchbox "filter data by Vendor Name" [ref=e186]
+              - cell "filter data by Requestor" [ref=e187]:
+                - generic [ref=e189]:
+                  - generic [ref=e191]: filter_list
+                  - searchbox "filter data by Requestor" [ref=e192]
+              - cell "filter data by Department" [ref=e193]:
+                - generic [ref=e195]:
+                  - generic [ref=e197]: filter_list
+                  - searchbox "filter data by Department" [ref=e198]
+              - cell "filter data by Buyer" [ref=e199]:
+                - generic [ref=e201]:
+                  - generic [ref=e203]: filter_list
+                  - searchbox "filter data by Buyer" [ref=e204]
+              - cell "filter data by Total Amount" [ref=e205]:
+                - generic [ref=e207]:
+                  - generic [ref=e209]: filter_list
+                  - searchbox "filter data by Total Amount" [ref=e210]
+              - cell "filter data by Cre. Date" [ref=e211]:
+                - generic [ref=e213]:
+                  - generic [ref=e215]: filter_list
+                  - searchbox "filter data by Cre. Date" [ref=e216]
+              - cell "filter data by Del. Date" [ref=e217]:
+                - generic [ref=e219]:
+                  - generic [ref=e221]: filter_list
+                  - searchbox "filter data by Del. Date" [ref=e222]
+            - row "PO/0024422 Open Order 201666 Netco Network Securi ... Christine Acutina Aqaar Community Mana ... Riyas Peechintavida AED 45,281.25 NA 26-01-2026" [ref=e223]:
+              - cell "PO/0024422" [ref=e224]:
+                - generic [ref=e225]: PO/0024422
+              - cell "Open Order" [ref=e226]:
+                - generic [ref=e228]: Open Order
+              - cell "201666" [ref=e229]:
+                - generic "201666" [ref=e230]:
+                  - strong [ref=e231]: "201666"
+              - cell "Netco Network Securi ..." [ref=e232]:
+                - generic "Netco Network Security Solutions LLC" [ref=e233]:
+                  - strong [ref=e234]: Netco Network Securi ...
+              - cell "Christine Acutina" [ref=e235]:
+                - generic "Christine Acutina" [ref=e236]:
+                  - strong [ref=e237]: Christine Acutina
+              - cell "Aqaar Community Mana ..." [ref=e238]:
+                - generic "Aqaar Community Management" [ref=e239]: Aqaar Community Mana ...
+              - cell "Riyas Peechintavida" [ref=e240]:
+                - generic "Riyas Peechintavida" [ref=e241]
+              - cell "AED 45,281.25" [ref=e242]:
+                - strong [ref=e244]: AED 45,281.25
+              - cell "NA" [ref=e245]:
+                - generic [ref=e246]: NA
+              - cell "26-01-2026" [ref=e247]:
+                - generic [ref=e248]: 26-01-2026
+            - row "PO/0024383 Open Order 201666 Netco Network Securi ... Christine Acutina Aqaar Community Mana ... Riyas Peechintavida AED 45,281.25 NA 20-01-2026" [ref=e249]:
+              - cell "PO/0024383" [ref=e250]:
+                - generic [ref=e251]: PO/0024383
+              - cell "Open Order" [ref=e252]:
+                - generic [ref=e254]: Open Order
+              - cell "201666" [ref=e255]:
+                - generic "201666" [ref=e256]:
+                  - strong [ref=e257]: "201666"
+              - cell "Netco Network Securi ..." [ref=e258]:
+                - generic "Netco Network Security Solutions LLC" [ref=e259]:
+                  - strong [ref=e260]: Netco Network Securi ...
+              - cell "Christine Acutina" [ref=e261]:
+                - generic "Christine Acutina" [ref=e262]:
+                  - strong [ref=e263]: Christine Acutina
+              - cell "Aqaar Community Mana ..." [ref=e264]:
+                - generic "Aqaar Community Management" [ref=e265]: Aqaar Community Mana ...
+              - cell "Riyas Peechintavida" [ref=e266]:
+                - generic "Riyas Peechintavida" [ref=e267]
+              - cell "AED 45,281.25" [ref=e268]:
+                - strong [ref=e270]: AED 45,281.25
+              - cell "NA" [ref=e271]:
+                - generic [ref=e272]: NA
+              - cell "20-01-2026" [ref=e273]:
+                - generic [ref=e274]: 20-01-2026
+            - row "PO/0024382 Open Order 201666 Netco Network Securi ... Christine Acutina Aqaar Community Mana ... Riyas Peechintavida AED 0.00 22-01-2026 22-01-2026" [ref=e275]:
+              - cell "PO/0024382" [ref=e276]:
+                - generic [ref=e277]: PO/0024382
+              - cell "Open Order" [ref=e278]:
+                - generic [ref=e280]: Open Order
+              - cell "201666" [ref=e281]:
+                - generic "201666" [ref=e282]:
+                  - strong [ref=e283]: "201666"
+              - cell "Netco Network Securi ..." [ref=e284]:
+                - generic "Netco Network Security Solutions LLC" [ref=e285]:
+                  - strong [ref=e286]: Netco Network Securi ...
+              - cell "Christine Acutina" [ref=e287]:
+                - generic "Christine Acutina" [ref=e288]:
+                  - strong [ref=e289]: Christine Acutina
+              - cell "Aqaar Community Mana ..." [ref=e290]:
+                - generic "Aqaar Community Management" [ref=e291]: Aqaar Community Mana ...
+              - cell "Riyas Peechintavida" [ref=e292]:
+                - generic "Riyas Peechintavida" [ref=e293]
+              - cell "AED 0.00" [ref=e294]:
+                - strong [ref=e296]: AED 0.00
+              - cell "22-01-2026" [ref=e297]:
+                - generic [ref=e298]: 22-01-2026
+              - cell "22-01-2026" [ref=e299]:
+                - generic [ref=e300]: 22-01-2026
+            - row "PO/0024368 Open Order 201811 Precision Skills Tec ... Christine Acutina Aqaar Community Mana ... Riyas Peechintavida AED 8,400.00 NA 15-01-2026" [ref=e301]:
+              - cell "PO/0024368" [ref=e302]:
+                - generic [ref=e303]: PO/0024368
+              - cell "Open Order" [ref=e304]:
+                - generic [ref=e306]: Open Order
+              - cell "201811" [ref=e307]:
+                - generic "201811" [ref=e308]:
+                  - strong [ref=e309]: "201811"
+              - cell "Precision Skills Tec ..." [ref=e310]:
+                - generic "Precision Skills Technical Services LLC" [ref=e311]:
+                  - strong [ref=e312]: Precision Skills Tec ...
+              - cell "Christine Acutina" [ref=e313]:
+                - generic "Christine Acutina" [ref=e314]:
+                  - strong [ref=e315]: Christine Acutina
+              - cell "Aqaar Community Mana ..." [ref=e316]:
+                - generic "Aqaar Community Management" [ref=e317]: Aqaar Community Mana ...
+              - cell "Riyas Peechintavida" [ref=e318]:
+                - generic "Riyas Peechintavida" [ref=e319]
+              - cell "AED 8,400.00" [ref=e320]:
+                - strong [ref=e322]: AED 8,400.00
+              - cell "NA" [ref=e323]:
+                - generic [ref=e324]: NA
+              - cell "15-01-2026" [ref=e325]:
+                - generic [ref=e326]: 15-01-2026
+            - row "PO/0024363 Open Order 201272 INJAAZ Christine Acutina Aqaar Community Mana ... Riyas Peechintavida AED 6,311.84 NA 15-01-2026" [ref=e327]:
+              - cell "PO/0024363" [ref=e328]:
+                - generic [ref=e329]: PO/0024363
+              - cell "Open Order" [ref=e330]:
+                - generic [ref=e332]: Open Order
+              - cell "201272" [ref=e333]:
+                - generic "201272" [ref=e334]:
+                  - strong [ref=e335]: "201272"
+              - cell "INJAAZ" [ref=e336]:
+                - generic "INJAAZ" [ref=e337]:
+                  - strong [ref=e338]: INJAAZ
+              - cell "Christine Acutina" [ref=e339]:
+                - generic "Christine Acutina" [ref=e340]:
+                  - strong [ref=e341]: Christine Acutina
+              - cell "Aqaar Community Mana ..." [ref=e342]:
+                - generic "Aqaar Community Management" [ref=e343]: Aqaar Community Mana ...
+              - cell "Riyas Peechintavida" [ref=e344]:
+                - generic "Riyas Peechintavida" [ref=e345]
+              - cell "AED 6,311.84" [ref=e346]:
+                - strong [ref=e348]: AED 6,311.84
+              - cell "NA" [ref=e349]:
+                - generic [ref=e350]: NA
+              - cell "15-01-2026" [ref=e351]:
+                - generic [ref=e352]: 15-01-2026
+            - row "PO/0024362 Open Order 201059 Hussain Advertisemen ... Christine Acutina Aqaar Community Mana ... Riyas Peechintavida AED 7,087.50 NA 15-01-2026" [ref=e353]:
+              - cell "PO/0024362" [ref=e354]:
+                - generic [ref=e355]: PO/0024362
+              - cell "Open Order" [ref=e356]:
+                - generic [ref=e358]: Open Order
+              - cell "201059" [ref=e359]:
+                - generic "201059" [ref=e360]:
+                  - strong [ref=e361]: "201059"
+              - cell "Hussain Advertisemen ..." [ref=e362]:
+                - generic "Hussain Advertisement LLC" [ref=e363]:
+                  - strong [ref=e364]: Hussain Advertisemen ...
+              - cell "Christine Acutina" [ref=e365]:
+                - generic "Christine Acutina" [ref=e366]:
+                  - strong [ref=e367]: Christine Acutina
+              - cell "Aqaar Community Mana ..." [ref=e368]:
+                - generic "Aqaar Community Management" [ref=e369]: Aqaar Community Mana ...
+              - cell "Riyas Peechintavida" [ref=e370]:
+                - generic "Riyas Peechintavida" [ref=e371]
+              - cell "AED 7,087.50" [ref=e372]:
+                - strong [ref=e374]: AED 7,087.50
+              - cell "NA" [ref=e375]:
+                - generic [ref=e376]: NA
+              - cell "15-01-2026" [ref=e377]:
+                - generic [ref=e378]: 15-01-2026
+            - row "PO/0024160 Open Order 201059 Hussain Advertisemen ... Christine Acutina Aqaar Community Mana ... Riyas Peechintavida AED 2,058.00 NA 31-12-2025" [ref=e379]:
+              - cell "PO/0024160" [ref=e380]:
+                - generic [ref=e381]: PO/0024160
+              - cell "Open Order" [ref=e382]:
+                - generic [ref=e384]: Open Order
+              - cell "201059" [ref=e385]:
+                - generic "201059" [ref=e386]:
+                  - strong [ref=e387]: "201059"
+              - cell "Hussain Advertisemen ..." [ref=e388]:
+                - generic "Hussain Advertisement LLC" [ref=e389]:
+                  - strong [ref=e390]: Hussain Advertisemen ...
+              - cell "Christine Acutina" [ref=e391]:
+                - generic "Christine Acutina" [ref=e392]:
+                  - strong [ref=e393]: Christine Acutina
+              - cell "Aqaar Community Mana ..." [ref=e394]:
+                - generic "Aqaar Community Management" [ref=e395]: Aqaar Community Mana ...
+              - cell "Riyas Peechintavida" [ref=e396]:
+                - generic "Riyas Peechintavida" [ref=e397]
+              - cell "AED 2,058.00" [ref=e398]:
+                - strong [ref=e400]: AED 2,058.00
+              - cell "NA" [ref=e401]:
+                - generic [ref=e402]: NA
+              - cell "31-12-2025" [ref=e403]:
+                - generic [ref=e404]: 31-12-2025
+            - row "PO/0023982 Open Order 201059 Hussain Advertisemen ... Christine Acutina Aqaar Community Mana ... Riyas Peechintavida AED 5,909.40 NA 15-12-2025" [ref=e405]:
+              - cell "PO/0023982" [ref=e406]:
+                - generic [ref=e407]: PO/0023982
+              - cell "Open Order" [ref=e408]:
+                - generic [ref=e410]: Open Order
+              - cell "201059" [ref=e411]:
+                - generic "201059" [ref=e412]:
+                  - strong [ref=e413]: "201059"
+              - cell "Hussain Advertisemen ..." [ref=e414]:
+                - generic "Hussain Advertisement LLC" [ref=e415]:
+                  - strong [ref=e416]: Hussain Advertisemen ...
+              - cell "Christine Acutina" [ref=e417]:
+                - generic "Christine Acutina" [ref=e418]:
+                  - strong [ref=e419]: Christine Acutina
+              - cell "Aqaar Community Mana ..." [ref=e420]:
+                - generic "Aqaar Community Management" [ref=e421]: Aqaar Community Mana ...
+              - cell "Riyas Peechintavida" [ref=e422]:
+                - generic "Riyas Peechintavida" [ref=e423]
+              - cell "AED 5,909.40" [ref=e424]:
+                - strong [ref=e426]: AED 5,909.40
+              - cell "NA" [ref=e427]:
+                - generic [ref=e428]: NA
+              - cell "15-12-2025" [ref=e429]:
+                - generic [ref=e430]: 15-12-2025
+            - row "PO/0023916 Open Order 201059 Hussain Advertisemen ... Christine Acutina Aqaar Community Mana ... Riyas Peechintavida AED 4,725.00 NA 11-12-2025" [ref=e431]:
+              - cell "PO/0023916" [ref=e432]:
+                - generic [ref=e433]: PO/0023916
+              - cell "Open Order" [ref=e434]:
+                - generic [ref=e436]: Open Order
+              - cell "201059" [ref=e437]:
+                - generic "201059" [ref=e438]:
+                  - strong [ref=e439]: "201059"
+              - cell "Hussain Advertisemen ..." [ref=e440]:
+                - generic "Hussain Advertisement LLC" [ref=e441]:
+                  - strong [ref=e442]: Hussain Advertisemen ...
+              - cell "Christine Acutina" [ref=e443]:
+                - generic "Christine Acutina" [ref=e444]:
+                  - strong [ref=e445]: Christine Acutina
+              - cell "Aqaar Community Mana ..." [ref=e446]:
+                - generic "Aqaar Community Management" [ref=e447]: Aqaar Community Mana ...
+              - cell "Riyas Peechintavida" [ref=e448]:
+                - generic "Riyas Peechintavida" [ref=e449]
+              - cell "AED 4,725.00" [ref=e450]:
+                - strong [ref=e452]: AED 4,725.00
+              - cell "NA" [ref=e453]:
+                - generic [ref=e454]: NA
+              - cell "11-12-2025" [ref=e455]:
+                - generic [ref=e456]: 11-12-2025
+            - row "PO/0023367 Open Order 201811 Precision Skills Tec ... Christine Acutina Aqaar Community Mana ... Riyas Peechintavida AED 57,588.30 NA 20-10-2025" [ref=e457]:
+              - cell "PO/0023367" [ref=e458]:
+                - generic [ref=e459]: PO/0023367
+              - cell "Open Order" [ref=e460]:
+                - generic [ref=e462]: Open Order
+              - cell "201811" [ref=e463]:
+                - generic "201811" [ref=e464]:
+                  - strong [ref=e465]: "201811"
+              - cell "Precision Skills Tec ..." [ref=e466]:
+                - generic "Precision Skills Technical Services LLC" [ref=e467]:
+                  - strong [ref=e468]: Precision Skills Tec ...
+              - cell "Christine Acutina" [ref=e469]:
+                - generic "Christine Acutina" [ref=e470]:
+                  - strong [ref=e471]: Christine Acutina
+              - cell "Aqaar Community Mana ..." [ref=e472]:
+                - generic "Aqaar Community Management" [ref=e473]: Aqaar Community Mana ...
+              - cell "Riyas Peechintavida" [ref=e474]:
+                - generic "Riyas Peechintavida" [ref=e475]
+              - cell "AED 57,588.30" [ref=e476]:
+                - strong [ref=e478]: AED 57,588.30
+              - cell "NA" [ref=e479]:
+                - generic [ref=e480]: NA
+              - cell "20-10-2025" [ref=e481]:
+                - generic [ref=e482]: 20-10-2025
+        - table [ref=e483]:
+          - rowgroup [ref=e484]:
+            - row "10 rows 1-10 of 31" [ref=e485]:
+              - cell "10 rows 1-10 of 31" [ref=e486]:
+                - generic [ref=e487]:
+                  - generic [ref=e488]:
+                    - 'button "Rows per page: 10 rows" [ref=e489] [cursor=pointer]':
+                      - generic [ref=e490]: 10 rows
+                    - textbox: "10"
+                    - img
+                  - generic [ref=e491]:
+                    - generic "First Page" [ref=e492]:
+                      - button [disabled]:
+                        - generic:
+                          - generic: first_page
+                    - generic "Previous Page" [ref=e493]:
+                      - button [disabled]:
+                        - generic:
+                          - generic: chevron_left
+                    - generic [ref=e494]: 1-10 of 31
+                    - generic "Next Page" [ref=e495]:
+                      - button [ref=e496] [cursor=pointer]:
+                        - generic [ref=e498]: chevron_right
+                    - generic "Last Page" [ref=e499]:
+                      - button [ref=e500] [cursor=pointer]:
+                        - generic [ref=e502]: last_page
+    - generic [ref=e503]:
+      - img "logo" [ref=e504]
+      - generic [ref=e505]: Copyright©2026 Prokraya Tech Private Limited, All rights reserved. | Privacy Policy| Terms & Conditions
+      - generic [ref=e506]: "Last Login: 17-03-2026 06:30 PM"
+```
