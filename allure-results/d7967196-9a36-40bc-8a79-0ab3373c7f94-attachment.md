@@ -1,0 +1,62 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e6]:
+  - generic [ref=e10]:
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - img "Savings as a service" [ref=e15]
+        - heading "Savings as a service" [level=2] [ref=e16]
+        - paragraph [ref=e17]: See higher sourcing savings through increased visibility into procurement
+      - generic [ref=e19]:
+        - img "Unified Portal" [ref=e20]
+        - heading "Unified Portal" [level=2] [ref=e21]
+        - paragraph [ref=e22]: Integrate key processes into a single platform. Improve collaboration, trust, and spend among trading partners
+      - generic [ref=e24]:
+        - img "Source to pay" [ref=e25]
+        - heading "Source to pay" [level=2] [ref=e26]
+        - paragraph [ref=e27]: S2P starts with finding, negotiating with, and contracting the supplier of goods
+      - generic [ref=e29]:
+        - img "Savings as a service" [ref=e30]
+        - heading "Savings as a service" [level=2] [ref=e31]
+        - paragraph [ref=e32]: See higher sourcing savings through increased visibility into procurement
+      - generic [ref=e34]:
+        - img "Unified Portal" [ref=e35]
+        - heading "Unified Portal" [level=2] [ref=e36]
+        - paragraph [ref=e37]: Integrate key processes into a single platform. Improve collaboration, trust, and spend among trading partners
+      - generic [ref=e39]:
+        - img "Source to pay" [ref=e40]
+        - heading "Source to pay" [level=2] [ref=e41]
+        - paragraph [ref=e42]: S2P starts with finding, negotiating with, and contracting the supplier of goods
+      - generic [ref=e44]:
+        - img "Savings as a service" [ref=e45]
+        - heading "Savings as a service" [level=2] [ref=e46]
+        - paragraph [ref=e47]: See higher sourcing savings through increased visibility into procurement
+    - generic [ref=e48]:
+      - button [ref=e49] [cursor=pointer]
+      - button [ref=e50] [cursor=pointer]
+      - button [ref=e51] [cursor=pointer]
+  - generic [ref=e53]:
+    - img "logo" [ref=e55]
+    - generic [ref=e56]:
+      - heading "Sign In" [level=2] [ref=e57]
+      - paragraph [ref=e58]: Access the Prokraya Account using your email and password.
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - textbox [ref=e61]: invaliduser@gmail.com
+        - generic [ref=e62]: Email *
+      - generic [ref=e63]:
+        - textbox [ref=e64]: Test@123
+        - generic [ref=e65]: Password *
+        - generic [ref=e67] [cursor=pointer]: 
+        - link "Forgot Password" [ref=e69] [cursor=pointer]:
+          - /url: /forgotpassword
+      - generic [ref=e70]:
+        - button "Sign In" [ref=e71] [cursor=pointer]
+        - separator [ref=e72]
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]: Terms & Conditions
+          - listitem [ref=e77]: Privacy Policy
+        - generic [ref=e78]: ©2026 Prokraya Tech Private Limited. All rights reserved.
+```
