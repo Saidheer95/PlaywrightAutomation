@@ -1,0 +1,6 @@
+✅ Vendor created successfully with details:
+   Organization: Vendor_ynr0
+   Email: user_uocs6@testmail.com
+   Contact Email: user_e65ue@testmail.com
+   Contact Phone: 287660381
+   City: Chennai

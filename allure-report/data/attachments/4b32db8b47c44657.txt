@@ -1,0 +1,5 @@
+✅ Initial vendor created with details:
+   Organization: Vendor_sai3
+   Email: user_1hdz7@testmail.com
+   Contact Email: user_ghylt@testmail.com
+   Contact Phone: 485144641

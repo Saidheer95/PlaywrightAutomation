@@ -1,0 +1,6 @@
+✅ Vendor created successfully with details:
+   Organization: Vendor_e3rx
+   Email: user_j1hxy@testmail.com
+   Contact Email: user_dy5tq@testmail.com
+   Contact Phone: 703871459
+   City: Chennai

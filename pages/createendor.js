@@ -3,7 +3,8 @@ class createVendor {
 
    constructor(page) {
       this.page = page;
-      this.clickVendor = "a[href='/supplier']"
+      // this.clickVendor = "a[href='/supplier']"
+      this.clickVendor="a:has-text('Vendors')";
       this.clickCreateVendor = "button:has-text('Create Vendor')";
       this.organizationName = "input[name='selectedSupplierName']";
       this.address = "input[name='selectedAddress']";
@@ -26,14 +27,18 @@ class createVendor {
 
    async CreateTheVendor() {
 
+      // Ensure the page has finished loading resources before acting
       await this.page.waitForLoadState('networkidle');
 
+      // Navigate to the supplier (vendor) page
       await this.page.waitForSelector(this.clickVendor, { state: 'visible' });
       await this.page.click(this.clickVendor);
 
+      // Click the 'Create Vendor' button to open the creation form
       await this.page.waitForSelector(this.clickCreateVendor, { state: 'visible' });
       await this.page.click(this.clickCreateVendor);
 
+      // Generate test data for vendor fields
       const vendorData = {
          organization: TestDataGenerator.randomCompanyName(),
          address: TestDataGenerator.randomAddress(),
@@ -46,19 +51,29 @@ class createVendor {
          contactPhone: TestDataGenerator.randomPhoneNumber()
       };
 
+      // Fill vendor details in the form fields
       await this.page.fill(this.organizationName, vendorData.organization);
       await this.page.fill(this.address, vendorData.address);
 
+      // Select business type option from dropdown dynamically
       await this.page.click(this.businessType);
-      await this.page.click("div.select__option:has-text('CO-Op Society')");
+      const businessOptions = await this.page.locator("div.select__option").allTextContents();
+      const chosenBusiness = businessOptions[Math.floor(Math.random() * businessOptions.length)];
+      await this.page.click(`div.select__option:has-text('${chosenBusiness}')`);
 
+      // Fill city name
       await this.page.fill(this.city, vendorData.city);
 
+      // Select emirate from dropdown dynamically
       const emirateDropdown = this.page.locator(this.emirate);
       await emirateDropdown.waitFor({ state: 'visible'});
       await emirateDropdown.click();
-      await this.page.click("div.select__option:has-text('Abu Dhabi')");
-
+      const emirateOptions = await this.page.locator("div.select__option").allTextContents();
+      const chosenEmirate = emirateOptions[Math.floor(Math.random() * emirateOptions.length)];
+      await this.page.click(`div.select__option:has-text('${chosenEmirate}')`);
+      console.log('Selected Emirate:', chosenEmirate);
+      
+      // Fill remaining fields: license, zipcode, place of issue, incorporation date, contact details
       await this.page.fill(this.license, vendorData.license);
       await this.page.fill(this.zipcode, vendorData.zipcode);
       await this.page.click(this.placeOfIssue);
@@ -66,13 +81,16 @@ class createVendor {
       await this.page.fill(this.incorporationDate, '18-03-2026');
       await this.page.fill(this.contactname, vendorData.contactname);
       await this.page.fill(this.contactemail, vendorData.email);
-      await this.page.fill(this.contactPhone, vendorData.contactPhone);
+
+      const normalizedPhone = vendorData.contactPhone.replace(/^\+971/, '').trim();
+      await this.page.fill(this.contactPhone, normalizedPhone);
+
+
+      // Submit the vendor creation form
       await this.page.click(this.submitButton);
 
-
+      // Return the generated data for assertions in tests
       return vendorData;
-
-
    }
 }
 module.exports = createVendor;

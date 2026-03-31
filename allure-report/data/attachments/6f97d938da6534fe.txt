@@ -1,0 +1,11 @@
+Initial vendor created for negative tests {
+  organization: 'Vendor_60uo',
+  address: 'Street_985, Test Area',
+  email: 'user_t28kx@testmail.com',
+  city: 'Chennai',
+  license: 'LIC232028',
+  zipcode: '769099',
+  contactname: 'Contact_nrf7',
+  contactEmail: 'user_kpqiy@testmail.com',
+  contactPhone: '439005186'
+}

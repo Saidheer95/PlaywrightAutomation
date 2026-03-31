@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:positive": "playwright test tests/createvendor.spec.js",
+    "test:negative": "playwright test tests/createvendor.negative.spec.js --workers=1",
+    "test:all": "playwright test && npm run allure:report",
+    "allure:report": "allure generate allure-results -o allure-report --clean",
+    "allure:open": "allure open allure-report",
+    "test:with-report": "playwright test && npm run allure:report && npm run allure:open"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

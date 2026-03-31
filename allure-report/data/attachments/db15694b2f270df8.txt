@@ -1,0 +1,1 @@
+Skipping test: Initial vendor data not available

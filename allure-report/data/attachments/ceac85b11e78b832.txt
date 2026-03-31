@@ -1,0 +1,11 @@
+Initial vendor created for negative tests {
+  organization: 'Vendor_aih5',
+  address: 'Street_938, Test Area',
+  email: 'user_jb5yz@testmail.com',
+  city: 'Bangalore',
+  license: 'LIC773924',
+  zipcode: '350283',
+  contactname: 'Contact_qs6u',
+  contactEmail: 'user_ssnm5@testmail.com',
+  contactPhone: '414710682'
+}

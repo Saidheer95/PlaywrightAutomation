@@ -35,9 +35,14 @@ export class TestDataGenerator {
   }
 
   static randomPhoneNumber() {
+    // Compatibility with UAE mobile field that adds +971 country code automatically.
+    // Generate national number part only (e.g., 50XXXXXXX).
+    const prefixes = ['50', '52', '54', '55', '56', '58'];
     let number;
     do {
-      number = Math.floor(100000000 + Math.random() * 900000000).toString();
+      const prefix = prefixes[Math.floor(Math.random() * prefixes.length)];
+      const local = Math.floor(1000000 + Math.random() * 9000000).toString();
+      number = `${prefix}${local}`;
     } while (this.usedPhoneNumbers.has(number));
     this.usedPhoneNumbers.add(number);
     return number;

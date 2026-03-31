@@ -1,0 +1,6 @@
+✅ Vendor created successfully with details:
+   Organization: Vendor_gsx9
+   Email: user_8qnaf@testmail.com
+   Contact Email: user_4dp2u@testmail.com
+   Contact Phone: 747102701
+   City: Bangalore

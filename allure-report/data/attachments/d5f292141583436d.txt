@@ -1,0 +1,6 @@
+✅ Vendor created successfully with details:
+   Organization: Vendor_v5ot
+   Email: user_1itfc@testmail.com
+   Contact Email: user_mw1gh@testmail.com
+   Contact Phone: 211174366
+   City: Bangalore

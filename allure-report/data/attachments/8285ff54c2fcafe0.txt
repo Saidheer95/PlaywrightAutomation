@@ -1,0 +1,6 @@
+🧪 Testing: Multiple Duplicate Fields
+   Attempting to create vendor with:
+   Organization: Vendor_sai3
+   Email: user_1hdz7@testmail.com
+   Contact Phone: 485144641
+⚠️ No error message visible - API may have prevented submission

@@ -1,0 +1,6 @@
+✅ Vendor created successfully with details:
+   Organization: Vendor_3yq8
+   Email: user_04lup@testmail.com
+   Contact Email: user_mtoqd@testmail.com
+   Contact Phone: 307749916
+   City: Bangalore
