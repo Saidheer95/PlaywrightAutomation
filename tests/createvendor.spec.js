@@ -3,6 +3,9 @@ const LoginPage = require('../pages/loginPage')
 const CreateVendor = require('../pages/createendor')
 const config = require('../config.json')
 
+const { writeVendorOrganization } = require('../utils/logger');
+
+
 test("Verify the vendor creation functionality", async function ({ page }) {
 
     // Navigate to the application URL from config
@@ -17,7 +20,7 @@ test("Verify the vendor creation functionality", async function ({ page }) {
     const vendorData = await createVendor.CreateTheVendor();
 
     // Log vendor details for reference
-    console.log('✅ Vendor created successfully with details:');
+    console.log('Vendor created successfully with details:');
     console.log('   Organization:', vendorData.organization);
     console.log('   Email:', vendorData.email);
     console.log('   Contact Email:', vendorData.contactEmail);
@@ -29,5 +32,7 @@ test("Verify the vendor creation functionality", async function ({ page }) {
     console.log('   Contact Name:', vendorData.contactname);
 
     
+    writeVendorOrganization(vendorData.organization);
+
 
 })
