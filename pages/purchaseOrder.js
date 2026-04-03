@@ -20,7 +20,7 @@ class PurchaseOrder {
     
     }
 
-    async createPurchaseOrder() {
+    async createPurchaseOrderNew() {
     // Wait for page stability
     await this.page.waitForLoadState('networkidle');
 
@@ -38,25 +38,22 @@ class PurchaseOrder {
     await this.page.click(this.clickDeliveryNote);
 
     const asnNumber = TestDataGenerator.randomNumber();
-    await this.page.fill(this.enterASNnumber, asnNumber, { delay: 200 });
+    await this.page.fill(this.enterASNnumber, asnNumber, { delay: 2000 });
 
     await this.page.click(this.receiptDate);
 
-    await this.page.fill(this.receiptDate, "10/04/2026", { delay: 200 });  
+    await this.page.fill(this.receiptDate, "10/04/2026", { delay: 2000 });  
     
     await this.page.keyboard.press('Enter');
     
     await this.page.click(this.selectCheckbox);
 
-    const enteredValue = "1";
-    await this.page.fill(this.enterValue, enteredValue, { delay: 200 });
+    await this.page.fill(this.enterValue, "1", { delay: 200 });
 
     await this.page.click(this.finalSubmit);
 
     console.log("Purchase order creation process completed successfully.");
     console.log("Entered ASN Number: " + asnNumber);
-    console.log("Entered Receipt Date: " + receiptDate);
-    console.log("Selected checkbox and entered value: " + enteredValue);    
     }
 }
     module.exports = PurchaseOrder;
