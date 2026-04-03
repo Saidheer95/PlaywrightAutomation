@@ -13,9 +13,9 @@ class PurchaseOrder {
 
         this.receiptDate="#Receipts-list-date";   
         
-       this.selectCheckbox = 'td.selection-cell input[type="checkbox"]';
-        this.enterValue = 'input[type="number"]';
-        this.finalSubmit = "button:has-text('Submit')";
+       this.selectCheckbox = "td.selection-cell input[type='checkbox']";
+       this.enterValue = "input[type='number']";
+       this.finalSubmit = "button:has-text('Submit')";
 
     
     }
@@ -56,12 +56,7 @@ class PurchaseOrder {
     console.log("Purchase order creation process completed successfully.");
     console.log("Entered ASN Number: " + asnNumber);
     console.log("Entered Receipt Date: " + receiptDate);
-    console.log("Selected checkbox and entered value: " + enteredValue);
-
-
-
-
-      
+    console.log("Selected checkbox and entered value: " + enteredValue);    
     }
 }
     module.exports = PurchaseOrder;
