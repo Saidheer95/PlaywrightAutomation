@@ -65,13 +65,7 @@ test('Approver: open notification, search task, click view icon', async ({ page 
 
     // Select the appropriate approver action
     await selectbutton.click();
-
-
-    // const commentBox = page.locator('textarea[name="approverComments"]');
-
-    // // Fill in the comment box with a sample comment
-    // await commentBox.fill('Approved by automation script.');
-
+   
     // Locate the Submit button using accessible role and visible text
     const finalSubmit = page.getByRole('button', { name: 'Submit' });
 

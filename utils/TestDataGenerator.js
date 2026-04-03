@@ -56,4 +56,10 @@ export class TestDataGenerator {
     return Math.floor(100000 + Math.random() * 900000).toString();
   }
 
+  static randomNumber(){
+    const text="ASN";
+    const number = Math.floor(100000 + Math.random() * 900000).toString();
+    return text+ number;
+  }
+
 }
