@@ -1,6 +1,0 @@
-✅ Vendor created successfully with details:
-   Organization: Vendor_tavy
-   Email: user_tklb6@testmail.com
-   Contact Email: user_gbsfr@testmail.com
-   Contact Phone: 714250537
-   City: Mumbai

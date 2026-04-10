@@ -1,3 +1,0 @@
-🧪 Testing: Duplicate Email Address
-   Attempting to create vendor with email: user_jb5yz@testmail.com
-⚠️ No error message visible - API may have prevented submission

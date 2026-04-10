@@ -1,1 +1,0 @@
-Vendor locator is: a[href='/supplier']

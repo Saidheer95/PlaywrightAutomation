@@ -1,6 +1,0 @@
-✅ Vendor created successfully with details:
-   Organization: Vendor_k6os
-   Email: user_j7f50@testmail.com
-   Contact Email: user_r1kwd@testmail.com
-   Contact Phone: 444885585
-   City: Hyderabad

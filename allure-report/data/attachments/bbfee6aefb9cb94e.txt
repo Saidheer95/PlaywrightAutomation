@@ -1,5 +1,0 @@
-🧪 Testing: Empty Organization Name
-⚠️ Error during empty organization test: page.waitForSelector: Test timeout of 30000ms exceeded.
-Call log:
-  - waiting for locator('button:has-text(\'Create Vendor\')') to be visible
-

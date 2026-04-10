@@ -1,3 +1,0 @@
-Testing: Invalid Email Format
-Email attempted: invalidemail
-No validation error visible
