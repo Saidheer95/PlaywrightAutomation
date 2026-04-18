@@ -4,9 +4,10 @@ const CreatePurchaseOrder = require('../pages/purchaseOrder');
 const userData = require('../user_data.json');
 const config = require('../config.json');
 const RaiseReceipt = require('../pages/RaiseReceipt');
+const RaiseInvoice = require('../pages/RaiseInvoice');
 const LogoutPage = require('../pages/logoutPage');
 
-test('login -> Create delivery -> Raise Receipt - Logout', async ({ page }) => {
+test('login -> Create delivery -> Raise Receipt -> Raise Invoice -> Logout', async ({ page }) => {
     // Navigate to the application base URL
     await page.goto(config.baseUrl);    
     // Initialize Login Page Object
@@ -25,8 +26,14 @@ test('login -> Create delivery -> Raise Receipt - Logout', async ({ page }) => {
     await createReceipt.raiseReceipt();  
     console.log("Receipt created successfully for the purchase order: " + userData.po_value);
 
-    const logoutPage = new LogoutPage(page);
-    await logoutPage.LogoutFromApplication();   
-    console.log("Logged out successfully");
+   
+    const createInvoice = new RaiseInvoice(page);
+    await createInvoice.raiseInvoice();
+    console.log("Invoice created successfully for the purchase order: " + userData.po_value);
+
+    //  const logoutPage = new LogoutPage(page);
+    // await logoutPage.LogoutFromApplication();   
+    // console.log("Logged out successfully");
+
 
 })

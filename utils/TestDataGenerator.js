@@ -68,7 +68,7 @@ export class TestDataGenerator {
     return text + number;
   }
 
-  static randonmInvoicenumber(){
+  static randomInvoicenumber(){
     const text="INV";
     const number = Math.floor(100000 + Math.random() * 900000).toString();
     return text+ number;    

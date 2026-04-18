@@ -10,7 +10,7 @@ test('Verify non-po invoice creation is not allowed', async ({ page }) => {
     await page.fill('input[name="password"]', 'Propswd@123');
     await page.click('button[type="submit"]');
     
-    await page.waitForLoadState('networkidle');
+
     await expect(page).toHaveURL('https://autostage-prokrayaai.buildecho.online/app/dashboard');
 
 
