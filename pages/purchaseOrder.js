@@ -1,4 +1,4 @@
-import { TestDataGenerator } from '../utils/TestDataGenerator';
+const { TestDataGenerator } = require('../utils/TestDataGenerator');
 class PurchaseOrder {
     constructor(page) {
         this.page = page;

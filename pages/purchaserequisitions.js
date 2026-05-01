@@ -1,4 +1,4 @@
-import TestDataGenerator from '../utils/TestDataGenerator';
+const { TestDataGenerator } = require('../utils/TestDataGenerator');
 class BidCreation{
     constructor(page){
         this.page = page;
@@ -9,6 +9,7 @@ class BidCreation{
         this.enterRFQCloseDate="#RFQ-Close-Date";
         this.clickCheckbox="span[class='checkmark']";
         this.submitRFQ="button:has-text('Submit')";
+        this.selectvendor=""
         
     }
 

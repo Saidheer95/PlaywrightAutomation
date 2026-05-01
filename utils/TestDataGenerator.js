@@ -1,4 +1,4 @@
-export class TestDataGenerator {
+class TestDataGenerator {
   static usedPhoneNumbers = new Set();
   static usedEmails = new Set();
   static usedCompanyNames = new Set();
@@ -75,3 +75,7 @@ export class TestDataGenerator {
   }
 
 }
+
+module.exports = {
+  TestDataGenerator,
+};

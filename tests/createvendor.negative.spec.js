@@ -129,11 +129,11 @@ test.describe.serial('Vendor Creation - Negative Test Cases', () => {
     const createVendor = new CreateVendor(page);
     
     if (!firstVendorData.contactPhone) {
-      console.warn('⚠️ Skipping test: Initial vendor data not available');
+      console.warn('Skipping test: Initial vendor data not available');
       return;
     }
 
-    console.log('🧪 Testing: Duplicate Contact Phone Number');
+    console.log('Testing: Duplicate Contact Phone Number');
     console.log('   Attempting to create vendor with phone:', firstVendorData.contactPhone);
 
     try {
@@ -156,13 +156,13 @@ test.describe.serial('Vendor Creation - Negative Test Cases', () => {
       
       if (isVisible) {
         const errorText = await errorMessage.first().textContent();
-        console.log('❌ Expected error received:', errorText);
-        console.log('✅ Duplicate phone validation working correctly');
+        console.log('Expected error received:', errorText);
+        console.log('Duplicate phone validation working correctly');
       } else {
-        console.log('⚠️ No error message visible - API may have prevented submission');
+        console.log('No error message visible - API may have prevented submission');
       }
     } catch (error) {
-      console.log('⚠️ Error during duplicate phone test:', error.message);
+      console.log('Error during duplicate phone test:', error.message);
     }
   });
 
